@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifespan Leadership Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #questions {
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 500px;
+        }
+        .cell {
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.2s;
+        }
+        .cell:hover {
+            background-color: #e0ffe0;
+            border-color: #4caf50;
+        }
+        .cell.correct {
+            background-color: #4caf50;
+            color: white;
+            border-color: #4caf50;
+        }
+        img {
+            max-width: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lifespan Leadership Quiz</h1>
+    <p>Click on the questions to reveal the answers!</p>
+    <img src="https://m.media-amazon.com/images/I/51Ug8olyq1L._AC_UF1000,1000_QL80_.jpg" alt="Lifespan Leadership Book Cover">
+    <div id="questions">
+        <div class="cell" onclick="this.innerHTML='False. The best leaders adapt rather than follow a rigid plan.'; this.classList.add('correct');">
+            The best leaders always have a clear plan. True or false?
+        </div>
+        <div class="cell" onclick="this.innerHTML='False. Rewarding effort and learning fosters long-term growth.'; this.classList.add('correct');">
+            The best way to motivate a team is to reward success. True or false?
+        </div>
+        <div class="cell" onclick="this.innerHTML='False. Admitting uncertainty builds trust and engagement.'; this.classList.add('correct');">
+            Leaders should always appear confident. True or false?
+        </div>
+        <div class="cell" onclick="this.innerHTML='False. The best leaders listen more than they talk.'; this.classList.add('correct');">
+            The most effective leaders talk more than they listen. True or false?
+        </div>
+        <div class="cell" onclick="this.innerHTML='False. Learning from mistakes is key to growth.'; this.classList.add('correct');">
+            The best leaders avoid mistakes at all costs. True or false?
+        </div>
+    </div>
+    <p><a href="https://www.amazon.com/Lifespan-Leadership-Javier-Ayala-PhD-ebook/dp/B0CZ1WS56S/" target="_blank"><strong>Learn more about Lifespan Leadership</strong></a></p>
+</body>
+</html>
